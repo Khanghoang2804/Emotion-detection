@@ -1,4 +1,34 @@
-Emotion Detection using Deep LearningThis repository explores various Convolutional Neural Network (CNN) architectures to perform Facial Emotion Recognition (FER). The goal is to classify human facial expressions into discrete categories such as happiness, sadness, anger, and more.📊 DatasetThe models are trained using the Emotion Detection FER dataset from Kaggle.Source: Kaggle Emotion Detection DatasetContent: Grayscale images of faces, categorized by emotion.🏗️ Models ImplementedI have implemented and compared three different deep learning approaches to evaluate their performance on the FER task:Custom CNN: A baseline architecture built from scratch using Conv2D, MaxPooling, and Dropout layers.VGG16: A pre-trained model known for its simplicity and depth, fine-tuned for facial classification.ResNet50: A residual network that utilizes skip connections to train deeper architectures without vanishing gradient issues.🚀 Getting StartedPrerequisitesEnsure you have the following installed:Python 3.xJupyter Notebook / Google ColabTensorFlow / KerasOpenCV, NumPy, and MatplotlibInstallationClone the repository:Bashgit clone https://github.com/Khanghoang2804/Emotion-detection.git
-Navigate to the project directory:Bashcd Emotion-detection
-Install dependencies:Bashpip install -r requirements.txt
-(Note: You should create a requirements.txt file with the libraries you used!)📈 ResultsModelAccuracyNotesCustom CNN--%Fast training, good baseline.VGG16--%High performance, heavy parameters.ResNet50--%Best stability during training.(Feel free to update this table with your actual training results!)🛠️ UsageEach notebook is self-contained. You can run the .ipynb files to:Load and preprocess the Kaggle data.Augment images to improve model generalization.Train the specific architecture.Visualize training loss and accuracy curves.
+# Facial Emotion Detection
+
+An exploration of various Deep Learning architectures to classify human facial expressions using the FER (Facial Emotion Recognition) dataset.
+
+---
+
+## 📌 Project Overview
+The goal of this project is to build and compare multiple Convolutional Neural Network (CNN) architectures to identify emotions from grayscale facial images. This project was created for learning purposes.
+
+### 📊 Dataset
+The models are trained using the **Emotion Detection FER** dataset from Kaggle.
+* **Source:** [Kaggle Dataset Link](https://www.kaggle.com/datasets/ananthu017/emotion-detection-fer)
+* **Categories:** Anger, Disgust, Fear, Happiness, Sadness, Surprise, and Neutral.
+
+---
+
+## 🏗️ Models Implemented
+I have implemented three distinct approaches to compare performance:
+
+1.  **ResNet50:** A 50-layer Residual Network that uses skip connections to allow for deep feature extraction without the vanishing gradient problem.
+2.  **VGG16:** A classic architecture focused on 3x3 convolutional filters, known for its excellent performance in image localization and classification.
+3.  **Custom CNN:** (Baseline model for performance comparison).
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+To run these notebooks, you will need:
+* Python 3.8+
+* TensorFlow / Keras
+* OpenCV
+
+P.S. Please note that the weight files and trained models are not included in this repository due to size constraints; you will need to run the notebooks to train the models on your own machine or in Google Colab using the provided Kaggle dataset link.
